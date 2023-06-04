@@ -26,7 +26,7 @@ The above structure will generate the following content in `./_locales/<LocaleCo
 
 ## Usage
 
-### 1. Manually edit locale.csv
+### 1. Edit locale.csv
 
 > Do not to change the contents of the first two columns.
 

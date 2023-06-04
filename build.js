@@ -1,6 +1,6 @@
 const fs = require("fs");
 const csv = require("csv-parser");
-const fileName = "locale.csv";
+const fileName = "locale.myExt.csv";
 
 function buildOne(lang, languageConfig) {
   // Specify the directory path and folder name
@@ -36,6 +36,7 @@ fs.createReadStream(fileName)
   .on("end", () => {
     results.forEach((item) => {
       const { LocaleCode, LanguageRegion, ...languageConfig } = item;
+      // console.log("LocaleCode", LocaleCode, "LanguageRegion", LanguageRegion);
       buildOne(LocaleCode, languageConfig);
     });
     console.log("build finished ", results.length);
