@@ -11,7 +11,7 @@ Starting from column 3 in the CSV file, the values in each column will be output
 | en_GB      | English (Great Britain)| my app en_GB | my app desc en_GB|
 
 
-The above structure will generate the following content in `./_locales/<LocaleCode>/message.json`.
+The above structure in `locale.sample.csv` will generate the following content in `./locales_sample/<LocaleCode>/message.json`.
 
 ```json
 {
