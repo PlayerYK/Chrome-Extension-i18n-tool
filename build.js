@@ -14,9 +14,12 @@ function buildOneLanguage(dirPath, lang, languageConfig) {
     const jsonData = {};
     for (let [key, value] of Object.entries(languageConfig)) {
         // console.log([key, value]);
-        jsonData[key] = {
+        if (key !== "DescLen") {
+          jsonData[key] = {
             message: value,
-        };
+          };
+        }
+        
     }
 
     const jsonString = JSON.stringify(jsonData);
